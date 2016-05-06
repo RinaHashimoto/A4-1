@@ -30,4 +30,12 @@ public class SnakeCamelUtilTest {
 		String actual = scu.uncapitalize("Abc");
 		assertThat(actual, is(expected));
 	}
+	
+	@Test
+	public void camelToSnakecaseTest() {
+		SnakeCamelUtil scu = new SnakeCamelUtil();
+		String expected = "abc_def_ghi";
+		String actual = scu.camelToSnakecase("AbcDefGhi");
+		assertThat(actual, is(expected));
+	}
 }
