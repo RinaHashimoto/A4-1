@@ -22,4 +22,12 @@ public class SnakeCamelUtilTest {
 		String actual = scu.capitalize("abc");
 		assertThat(actual, is(expected));
 	}
+	
+	@Test
+	public void uncapitalizeTest() {
+		SnakeCamelUtil scu = new SnakeCamelUtil();
+		String expected = "abc";
+		String actual = scu.uncapitalize("Abc");
+		assertThat(actual, is(expected));
+	}
 }
