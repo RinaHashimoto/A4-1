@@ -30,6 +30,7 @@ public class SnakeCamelUtil {
 	}
 	
 	static String capitalize(String s) {
+		if (s.length() == 0) return "";
 		char first = s.charAt(0);
 		char upperFirst = Character.toUpperCase(first);
 		String rest = s.substring(1);
@@ -37,6 +38,7 @@ public class SnakeCamelUtil {
 	}
 
 	static String uncapitalize(String s) {
+		if (s.length() == 0) return "";
 		char first = s.charAt(0);
 		char lowerFirst = Character.toLowerCase(first);
 		String rest = s.substring(1);
